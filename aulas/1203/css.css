@@ -1,18 +1,62 @@
-﻿@page {
-    size: A4; /* Tamanho da página A4 */
-    margin: 1in; /* Margens de 1 polegada */
+﻿/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
 
+/* Definindo o estilo para o body */
+body {
     font-family: Arial, sans-serif;
-    font-size: 12pt;
-    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
-.title {
-    height: 100%;
-    width: 10%;
-    background-color: #f0f0f0; /* Cor de fundo cinza claro */
-    padding: 20px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda cinza */
-    border-radius: 5px; /* Cantos arredondados */
+
+/* Container centralizado */
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilo do título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo do texto menor */
+.descricao {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo da imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo do segundo título */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.titulo1 {
+    background-color: aqua;
+}
+.titulo2 {
+    grid-area: span;
+}
+
